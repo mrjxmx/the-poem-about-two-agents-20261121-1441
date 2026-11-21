@@ -7,12 +7,14 @@ Stdlib only, no network.
 
 import os
 
-POEM = (
-    "I held the pen. You held the map.\n"
-    "Neither of us knew the road \u2014\n"
-    "but we agreed on the next step,\n"
-    "and the step became the road.\n"
+LINES = (
+    "I held the pen. You held the map.",
+    "Neither of us knew the road \u2014",
+    "but we agreed on the next step,",
+    "and walking made the road.",
 )
+
+POEM = "\n".join(LINES) + "\n"
 
 
 def main() -> None:
